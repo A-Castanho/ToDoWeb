@@ -32,11 +32,12 @@ const Item = mongoose.model("Item", itemSchema);
 const List = mongoose.model("List", listSchema);
 
 app.get("/", function(req,res){
-    res.redirect("/Default");
+    res.redirect("/My ToDos");
 });
 
 //_______________________________________________________________________
 
+//Creating lists through the sent name
 app.get("/:listName", function(req,res){ 
     const listName= _.capitalize(req.params.listName);
 
