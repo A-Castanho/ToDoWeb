@@ -6,7 +6,7 @@
 html {
     background-color: #E4E9FD;
     background-image: -webkit-linear-gradient(65deg, #1565C0 50%, #E4E9FD 50%);
-    min-height: 1000px;
+    min-height: 100%;
     font-family: 'helvetica neue';
   }
   
