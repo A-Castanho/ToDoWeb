@@ -31,13 +31,12 @@ const Item = mongoose.model("Item", itemSchema);
 
 const List = mongoose.model("List", listSchema);
 
-const defaultItems = [new Item({name:"Cook"}),new Item({name:"Homework"})];
-
 app.get("/", function(req,res){
     res.redirect("/Default");
 });
 
 //_______________________________________________________________________
+
 app.get("/:listName", function(req,res){ 
     const listName= _.capitalize(req.params.listName);
 
